@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Quartz</id>
+    <version>2.3.2</version>
+    <title>Quartz.NET</title>
+    <authors>Marko Lahma</authors>
+    <owners>Marko Lahma</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>http://www.quartz-scheduler.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Quartz.NET Scheduling Framework for .NET Platform</description>
+    <summary />
+    <releaseNotes>This is a minor release containing mostly bug fixes.
+
+NEW FEATURE
+
+* Add mysql 6.9.5 provider support
+
+FIXES
+
+* Avoid unnecessary object allocations in CronExpression
+* CalendarIntervalTrigger and DailyTimeIntervalTrigger produce incorrect schedule builders
+* Incorrect multiplication factor in DailyTimeIntervalScheduleBuilder.EndingDailyAfterCount()
+* AnnualCalendar SetDayExcluded does not update internal data structures if base calendar excludes date
+* Ensure IDriverDelegate members in StdAdoDelegate are virtual
+* Several XML documentation spelling error fixes</releaseNotes>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Common.Logging" version="3.0.0" />
+    </dependencies>
+  </metadata>
+</package>
